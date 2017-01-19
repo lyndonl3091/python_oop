@@ -6,7 +6,8 @@ class Pokemon:
 
     def attack(self, other_pokemon):
         other_pokemon.health = other_pokemon.health - self.damage
-        print("{} attacks {}".format(self.name, other_pokemon.name))
+        print("{} attacks {}!".format(self.name, other_pokemon.name))
+        print("{} loses {} health points".format(other_pokemon.name, self.damage))
 
     def __str__(self):
         return "{}: {}".format(self.name, self.health)
